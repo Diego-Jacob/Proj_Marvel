@@ -30,6 +30,7 @@
         app:tabIndicatorHeight="2dp"
         app:tabMode="scrollable"
         app:tabSelectedTextColor="@color/azul_light"
+        app:tabTextAppearance="@style/Proj_MarvelTabLayoutTextAppearance"
         app:tabTextColor="@color/azul">
 
         <com.google.android.material.tabs.TabItem
