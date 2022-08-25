@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    tools:context=".HostMarvel">
+    tools:context=".Fragments.HostMarvel">
 
     <TextView
         android:id="@+id/tv_Title_Home"

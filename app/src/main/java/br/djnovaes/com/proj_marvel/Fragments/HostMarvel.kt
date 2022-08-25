@@ -1,11 +1,12 @@
-package br.djnovaes.com.proj_marvel
+package br.djnovaes.com.proj_marvel.Fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.fragment.app.FragmentActivity
+import br.djnovaes.com.proj_marvel.Adapters.ViewPagerAdapter
+import br.djnovaes.com.proj_marvel.R
 import br.djnovaes.com.proj_marvel.databinding.FragmentHostMarvelBinding
 import com.google.android.material.tabs.TabLayoutMediator
 
@@ -25,10 +26,7 @@ class HostMarvel : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        setupView()
-    }
-
-    fun setupView(){
+        //setupView()
         val tabLayout = binding.tabHome
         val viewPager = binding.vpHome
         val titles = arrayOf(R.string.characters, R.string.favorites)
@@ -39,5 +37,9 @@ class HostMarvel : Fragment() {
             tab.text = getString(titles[position])
         }.attach()
     }
+
+    //fun setupView(){
+
+   // }
 
 }
